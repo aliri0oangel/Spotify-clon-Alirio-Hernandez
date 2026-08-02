@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,7 @@
         class="flex items-center justify-between gap-8 bg-[#000000] text-white py-2 px-3"
       >
         <div class="flex px-4 gap-2">
-          <div class="flex gap-6 justify-between items-center">
+          <div class="flex 2xl:w-260 gap-6 justify-between items-center">
             <!-- logo -->
             <div class="fill-white rounded-4xl cursor-pointer">
               <svg
@@ -56,9 +56,26 @@
               </svg>
             </div>
           </div>
+          <!-- search md -->
+          <div
+            class="flex xl:hidden fill-[#B7B7B7] bg-[#2A2A2A]/75 transform transition hover:scale-105 cursor-pointer hover:bg-[#2A2A2A] p-3 rounded-4xl"
+          >
+            <svg
+              data-encore-id="icon"
+              role="img"
+              width="24"
+              height="24"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z"
+              ></path>
+            </svg>
+          </div>
           <!-- search bar -->
           <div
-            class="flex items-center justify-between transition duration-300 rounded-4xl bg-[#1F1F1F] hover:bg-[#2A2A2A] focus-within:ring-2 focus-within:bg-[#2A2A2A]"
+            class="hidden xl:flex items-center justify-between transition duration-300 rounded-4xl bg-[#1F1F1F] hover:bg-[#2A2A2A] focus-within:ring-2 focus-within:bg-[#2A2A2A]"
           >
             <div
               class="p-3 transform hover:scale-102 duration-150 fill-[#b7b7b7] hover:fill-white cursor-pointer"
@@ -93,7 +110,6 @@
                 height="24px"
                 aria-hidden="true"
                 viewBox="0 0 24 24"
-                style=""
               >
                 <path
                   d="M15 15.5c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2"
@@ -108,7 +124,7 @@
 
         <div class="flex items-center justify-between gap-2">
           <ul
-            class="flex px-4 border-r border-white items-center justify-between gap-3 font-bold text-[#B0B0B0]"
+            class="hidden lg:flex px-4 border-r border-white items-center justify-between gap-3 font-bold text-[#B0B0B0]"
           >
             <li
               class="transition transform hover:scale-102 duration-50 hover:text-white cursor-pointer"
@@ -127,10 +143,10 @@
             </li>
           </ul>
           <ul
-            class="flex px-2 items-center justify-between gap-4 text-sm font-bold text-[#B0B0B0]"
+            class="px-2 items-center justify-between gap-4 text-sm font-bold text-[#B0B0B0] hidden md:flex"
           >
             <li
-              class="flex items-center gap-2 transition transform hover:scale-103 duration-50 hover:text-white cursor-pointer fill-[#B0B0B0] hover:fill-white"
+              class="flex xl:shrink-0 items-center gap-2 transition transform hover:scale-103 duration-50 hover:text-white cursor-pointer fill-[#B0B0B0] hover:fill-white"
             >
               <svg
                 data-encore-id="icon"
@@ -156,23 +172,40 @@
             </li>
           </ul>
           <button
-            class="text-black bg-white py-3 px-8 rounded-4xl font-bold transition transform hover:scale-103 duration-50 cursor-pointer"
+            class="flex xl:shrink-0 xl:text-sm text-black bg-white py-3 px-8 rounded-4xl font-bold transition transform hover:scale-103 duration-50 cursor-pointer"
           >
             Iniciar sesión
           </button>
+          <!-- menu md -->
+          <div
+            class="md:flex lg:hidden xl:hidden fill-[#B7B7B7] bg-[#2A2A2A]/75 transform transition hover:scale-105 cursor-pointer hover:bg-[#2A2A2A] p-3 rounded-4xl"
+          >
+            <svg
+              data-encore-id="icon"
+              role="img"
+              aria-hidden="true"
+              viewBox="0 0 16 16"
+              width="18"
+              height="18"
+            >
+              <path
+                d="M15.5 13.5H.5V12h15zm0-4.75H.5v-1.5h15zm0-4.75H.5V2.5h15z"
+              ></path>
+            </svg>
+          </div>
         </div>
       </nav>
     </header>
 
-    <main class="h-[90vh] w-full">
+    <main class="h-[87vh] 2xl:h-[97vh] w-full">
       <div
-        class="grid grid-cols-[320px_1fr] grid-rows-[1fr_10vh] gap-2 h-full px-2"
+        class="grid grid-cols-[280px_1fr] grid-rows-[1fr_10vh] gap-2 h-full px-2"
       >
         <!-- side bar -->
         <aside class="bg-[#121212] rounded-lg">
           <!-- head -->
           <div
-            class="bg-[#121212] p-5 text-white flex items-center justify-between h-[75px]"
+            class="bg-[#121212] p-5 text-white flex items-center justify-between min-h-[60px]"
           >
             <span class="font-bold">Tu biblioteca</span>
             <div
@@ -195,7 +228,7 @@
           <!-- contenido -->
           <div>
             <ul
-              class="p-2 h-[210px] flex flex-col gap-3 overflow-y-auto scrollbar-thin scrollbar-thumb-transparent hover:scrollbar-thumb-[#717171] scrollbar-track-transparent"
+              class="p-2 h-[150px] 2xl:h-[610px] flex flex-col gap-3 overflow-y-auto scrollbar-thin scrollbar-thumb-transparent hover:scrollbar-thumb-[#717171] scrollbar-track-transparent"
             >
               <li class="bg-[#1F1F1F] text-white flex-col py-4 px-5 rounded-lg">
                 <div class="mb-4 flex flex-col gap-2">
@@ -284,7 +317,6 @@
                   viewBox="0 0 16 16"
                   width="16px"
                   height="16px"
-                  style=""
                 >
                   <path
                     d="M8.152 16H8a8 8 0 1 1 .152 0m-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296M4.877 7.25c.062-1.771.34-3.386.773-4.624q.148-.427.329-.806a6.51 6.51 0 0 0-4.436 5.43zm-3.334 1.5a6.51 6.51 0 0 0 4.436 5.43 8 8 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129zm5.048 0c-.061 1.771-.339 3.386-.772 4.624q-.123.353-.268.674a6.5 6.5 0 0 0 4.071-5.298zm3.031-1.5a6.51 6.51 0 0 0-4.071-5.298q.145.322.268.674c.433 1.238.711 2.853.772 4.624z"
@@ -298,14 +330,14 @@
 
         <!-- contenido principal -->
         <div
-          class="flex flex-col gap-8 rounded-lg bg-[#121212] px-6 overflow-y-auto scrollbar-thin scrollbar-thumb-transparent hover:scrollbar-thumb-[#717171] scrollbar-track-transparent"
+          class="flex flex-col gap-8 rounded-lg bg-[#121212] px-6 overflow-y-auto w-full scrollbar-thin scrollbar-thumb-transparent hover:scrollbar-thumb-[#717171] scrollbar-track-transparent"
         >
           <!-- Canciones del momento -->
           <section class="">
             <div class="flex flex-col gap-4 text-white py-4">
               <div class="flex justify-between items-end px-1">
                 <h2
-                  class="font-bold text-2xl decoration-solid hover:underline cursor-pointer"
+                  class="font-bold text-2xl decoration-solid hover:underline cursor-pointer truncate"
                 >
                   Canciones del momento
                 </h2>
@@ -315,9 +347,11 @@
                   Mostrar todo
                 </p>
               </div>
-              <ul class="text-white flex">
+              <ul
+                class="text-white flex flex-nowrap overflow-x-auto overflow-y-hidden"
+              >
                 <li
-                  class="flex flex-col rounded-lg gap-1 p-3 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102"
+                  class="w-[194px] min-w-[194px] flex flex-col rounded-lg gap-1 p-3 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102"
                 >
                   <div class="relative">
                     <img
@@ -354,7 +388,7 @@
                 </li>
 
                 <li
-                  class="flex flex-col rounded-lg gap-1 p-3 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102"
+                  class="w-[194px] min-w-[194px] flex flex-col rounded-lg gap-1 p-3 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102"
                 >
                   <div class="relative">
                     <img
@@ -390,7 +424,7 @@
                   </p>
                 </li>
                 <li
-                  class="flex flex-col rounded-lg gap-1 p-3 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102"
+                  class="w-[194px] min-w-[194px] flex flex-col rounded-lg gap-1 p-3 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102"
                 >
                   <div class="relative">
                     <img
@@ -427,7 +461,7 @@
                   </p>
                 </li>
                 <li
-                  class="flex flex-col rounded-lg gap-1 p-3 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102"
+                  class="w-[194px] min-w-[194px] flex flex-col rounded-lg gap-1 p-3 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102"
                 >
                   <div class="relative">
                     <img
@@ -464,7 +498,7 @@
                   </p>
                 </li>
                 <li
-                  class="flex flex-col rounded-lg gap-1 p-3 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102"
+                  class="w-[194px] min-w-[194px] flex flex-col rounded-lg gap-1 p-3 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102"
                 >
                   <div class="relative">
                     <img
@@ -524,10 +558,10 @@
               </div>
 
               <!-- cards -->
-              <div class="flex">
+              <div class="flex flex-nowrap overflow-x-auto overflow-y-hidden">
                 <!-- BAD BUNNY -->
                 <div
-                  class="p-3 flex flex-col gap-1 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg"
+                  class="w-[194px] min-w-[194px] p-3 flex flex-col gap-1 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg"
                 >
                   <div class="relative">
                     <img
@@ -566,7 +600,7 @@
                 </div>
                 <!-- KAROL G -->
                 <div
-                  class="p-3 flex flex-col gap-1 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg"
+                  class="w-[194px] min-w-[194px] p-3 flex flex-col gap-1 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg"
                 >
                   <div class="relative">
                     <img
@@ -605,7 +639,7 @@
                 </div>
                 <!-- RAUW -->
                 <div
-                  class="p-3 flex flex-col gap-1 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg"
+                  class="w-[194px] min-w-[194px] p-3 flex flex-col gap-1 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg"
                 >
                   <div class="relative">
                     <img
@@ -644,7 +678,7 @@
                 </div>
                 <!-- BEELE -->
                 <div
-                  class="p-3 flex flex-col gap-1 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg"
+                  class="w-[194px] min-w-[194px] p-3 flex flex-col gap-1 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg"
                 >
                   <div class="relative">
                     <img
@@ -683,7 +717,7 @@
                 </div>
                 <!-- FEID -->
                 <div
-                  class="p-3 flex flex-col gap-1 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg"
+                  class="w-[194px] min-w-[194px] p-3 flex flex-col gap-1 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg"
                 >
                   <div class="relative">
                     <img
@@ -729,7 +763,7 @@
               <!-- titles -->
               <div class="flex justify-between items-end px-1">
                 <h2
-                  class="font-bold text-2xl decoration-solid hover:underline cursor-pointer"
+                  class="font-bold text-2xl decoration-solid hover:underline cursor-pointer truncate max-w-[224px]"
                 >
                   Álbumes y sencillos populares
                 </h2>
@@ -739,9 +773,11 @@
                   Mostrar todo
                 </p>
               </div>
-              <ul class="text-white flex">
+              <ul
+                class="text-white flex flex-nowrap overflow-x-auto overflow-y-hidden"
+              >
                 <li
-                  class="flex flex-col gap-1 p-2 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg"
+                  class="flex flex-col gap-1 p-2 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg w-[194px] min-w-[194px]"
                 >
                   <div class="relative">
                     <img
@@ -779,7 +815,7 @@
                   </p>
                 </li>
                 <li
-                  class="flex flex-col gap-1 p-2 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg"
+                  class="flex flex-col gap-1 p-2 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg w-[194px] min-w-[194px]"
                 >
                   <div class="relative">
                     <img
@@ -817,7 +853,7 @@
                   </p>
                 </li>
                 <li
-                  class="flex flex-col gap-1 p-2 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg"
+                  class="flex flex-col gap-1 p-2 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg w-[194px] min-w-[194px]"
                 >
                   <div class="relative">
                     <img
@@ -856,7 +892,7 @@
                   </p>
                 </li>
                 <li
-                  class="flex flex-col gap-1 p-2 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg"
+                  class="flex flex-col gap-1 p-2 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg w-[194px] min-w-[194px]"
                 >
                   <div class="relative">
                     <img
@@ -895,7 +931,7 @@
                   </p>
                 </li>
                 <li
-                  class="flex flex-col gap-1 p-2 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg"
+                  class="flex flex-col gap-1 p-2 group cursor-pointer transition duration-300 hover:bg-[#1E1E1E] transform hover:scale-102 rounded-lg w-[194px] min-w-[194px]"
                 >
                   <div class="relative">
                     <img
@@ -937,19 +973,16 @@
                   -->
                 </li>
               </ul>
-              <!--  https://i.scdn.co/image/ab67616d00001e02bbd45c8d36e0e045ef640411 -->
-              <!--  -->
-              <!--  -->
-              <!--  -->
-              <!--  -->
             </div>
           </section>
 
           <footer class="pt-10">
             <!-- grid -->
-            <div class="grid grid-cols-5 py-16 border-t border-t-[#292929]">
+            <div
+              class="grid grid-cols-2 lg:grid-cols-5 gap-5 py-5 border-t border-t-[#292929]"
+            >
               <ul class="flex flex-col gap-1">
-                <li class="text-white font-bold">Compañía</li>
+                <li class="text-white font-bold truncate">Compañía</li>
                 <li
                   class="text-[#AEAEAE] transition duration-220 hover:text-white cursor-pointer"
                 >
@@ -967,7 +1000,7 @@
                 </li>
               </ul>
               <ul class="flex flex-col gap-1">
-                <li class="text-white font-bold">Comunidades</li>
+                <li class="text-white font-bold truncate">Comunidades</li>
                 <li
                   class="text-[#AEAEAE] transition duration-220 hover:text-white cursor-pointer"
                 >
@@ -995,7 +1028,7 @@
                 </li>
               </ul>
               <ul class="flex flex-col gap-1">
-                <li class="text-white font-bold">Enlaces útiles</li>
+                <li class="text-white font-bold truncate">Enlaces útiles</li>
                 <li
                   class="text-[#AEAEAE] transition duration-220 hover:text-white cursor-pointer"
                 >
@@ -1023,7 +1056,7 @@
                 </li>
               </ul>
               <ul class="flex flex-col gap-1">
-                <li class="text-white font-bold">Planes de Spotify</li>
+                <li class="text-white font-bold truncate">Planes de Spotify</li>
                 <li
                   class="text-[#AEAEAE] transition duration-220 hover:text-white cursor-pointer"
                 >
@@ -1178,25 +1211,43 @@
 
         <!-- barra de muestra -->
         <section
-          class="h-[10vh] flex items-center rounded-lg col-span-2 py-2 px-3 bg-linear-to-r from-[#AD2997] to-[#519AF4]"
+          class="col-span-2 flex items-center justify-between gap-0 h-auto min-h-[80px] py-4 md:py-0 md:h-[9vh] 2xl:h-[7vh] rounded-lg px-4 md:px-3 bg-linear-to-r from-[#AD2997] to-[#519AF4]"
         >
-          <div class="w-full flex justify-between items-center">
+          <!-- 1 -->
+          <div class="text-white">
+            <p class="text-xs md:text-sm font-bold">Muestra de spotify</p>
+            <p class="text-xs md:text-sm">
+              Regístrate para acceder a canciones y podcasts ilimitados con
+              algunos anuncios. No necesitas tarjeta de crédito.
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="flex shrink-0">
+            <button
+              class="text-black bg-white py-2 px-6 md:py-3 md:px-10 rounded-4xl font-bold transition transform hover:scale-103 duration-50 cursor-pointer w-full md:w-auto self-center md:self-auto"
+            >
+              Regístrate gratis
+            </button>
+          </div>
+        </section>
+        <!--   <section class="h-auto min-h-[80px] py-4 md:py-0 md:h-[9vh] 2xl:h-[7vh] flex items-center rounded-lg col-span-2 px-4 md:px-3 bg-linear-to-r from-[#AD2997] to-[#519AF4]" >
+          <div class="w-full flex items-center justify-between">
+           
             <div class="text-white">
-              <p class="text-sm font-bold">Muestra de spotify</p>
-              <p>
+              <p class="text-xs md:text-sm font-bold">Muestra de spotify</p>
+              <p class="text-xs md:text-sm">
                 Regístrate para acceder a canciones y podcasts ilimitados con
                 algunos anuncios. No necesitas tarjeta de crédito.
               </p>
             </div>
-            <div>
-              <button
-                class="text-black bg-white py-3 px-10 rounded-4xl font-bold transition transform hover:scale-103 duration-50 cursor-pointer"
-              >
+            
+            <div class="flex">
+              <button class="text-black bg-white py-2 px-6 md:py-3 md:px-10 rounded-4xl font-bold transition transform hover:scale-103 duration-50 cursor-pointer w-full md:w-auto" >
                 Regístrate gratis
               </button>
             </div>
           </div>
-        </section>
+        </section> -->
       </div>
     </main>
   </body>
